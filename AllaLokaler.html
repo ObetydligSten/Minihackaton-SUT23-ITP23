@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="AllaLokaler.html"><button class="button">Alla lokaler</button></a>
+        <a href="BokadeLokaler.html"><button class="button">Bokade lokaler</button></a>
+        <a href="index.html"><button class="button">Lediga lokaler</button></a>
+    </div>
+    <div class="main">
+        <ul id="resourceList">
+            <!-- List items will be inserted here -->
+        </ul>
+        
+        <script>
+            const allResources = ["E410", "B125", "A341", "E302", "B126", "A392", "E307", "B127", "A339", "E308", "B128", "A340", "E313", "B130", "A208", "E316", "B209", "A201", "E321", "B210", "A210", "E323", "B211", "A231", "E324", "B217", "A233", "E218", "B222", "A206", "E116", "B223", "A229", "E117", "B224", "A234", "E118", "B225", "A146", "E405", "B226", "A145", "B227", "B228", "B229", "B113", "B114", "C302", "B231", "C303", "B232", "C308", "C314", "C226", "E224", "E225", "C317"];
+            allResources.sort();
+            const ul = document.getElementById("resourceList");
+        
+            allResources.forEach(resource => {
+            const li = document.createElement("li");
+            li.textContent = resource;
+            ul.appendChild(li);
+            });
+        </script>
+
+    
+    </div>
+
+</body>
+</html>
